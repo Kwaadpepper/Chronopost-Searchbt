@@ -7,7 +7,7 @@ Chronopost WSDL php generated lib using https://github.com/WsdlToPhp/PackageGene
 This package will only contain generated content from chronopost endpoint https://ws.chronopost.fr/recherchebt-ws-cxf/PointRelaisServiceWS?wsdl
 
 ```sh
-composer require kwaadpepper/chronopost-quickcost
+composer require kwaadpepper/chronopost-searchbt
 ```
 
     wsdltophp generate:package \
