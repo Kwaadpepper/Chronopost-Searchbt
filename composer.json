@@ -1,6 +1,8 @@
 {
     "name": "kwaadpepper/chronopost-searchbt",
     "description": "Package generated from https://ws.chronopost.fr/recherchebt-ws-cxf/PointRelaisServiceWS?wsdl using wsdltophp/packagegenerator",
+    "license": "MIT",
+    "type": "library",
     "require": {
         "php": ">=8.1",
         "ext-dom": "*",
