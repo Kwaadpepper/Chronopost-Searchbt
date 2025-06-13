@@ -10,8 +10,10 @@ This package will only contain generated content from chronopost endpoint https:
 composer require kwaadpepper/chronopost-searchbt
 ```
 
-    wsdltophp generate:package \
-        --urlorpath="https://ws.chronopost.fr/recherchebt-ws-cxf/PointRelaisServiceWS?wsdl" \
-        --destination="." \
-        --composer-name="kwaadpepper/chronopost-searchbt" \
-        --force
+```sh
+wsdltophp generate:package \
+    --urlorpath="https://ws.chronopost.fr/recherchebt-ws-cxf/PointRelaisServiceWS?wsdl" --namespace ChronopostSearchBt \
+    --destination="." \
+    --composer-name="kwaadpepper/chronopost-searchbt" \
+    --force
+```

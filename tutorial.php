@@ -19,16 +19,16 @@ require_once __DIR__ . '/vendor/autoload.php';
  */
 $options = [
     WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_URL => 'https://ws.chronopost.fr/recherchebt-ws-cxf/PointRelaisServiceWS?wsdl',
-    WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => ClassMap::get(),
+    WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => \ChronopostSearchBt\ClassMap::get(),
 ];
 /**
  * Samples for Recherche ServiceType
  */
-$recherche = new \ServiceType\Recherche($options);
+$recherche = new \ChronopostSearchBt\ServiceType\Recherche($options);
 /**
  * Sample call for recherchePointChronopostInterParServiceAGL operation/method
  */
-if ($recherche->recherchePointChronopostInterParServiceAGL(new \StructType\RecherchePointChronopostInterParServiceAGL()) !== false) {
+if ($recherche->recherchePointChronopostInterParServiceAGL(new \ChronopostSearchBt\StructType\RecherchePointChronopostInterParServiceAGL()) !== false) {
     print_r($recherche->getResult());
 } else {
     print_r($recherche->getLastError());
@@ -36,7 +36,7 @@ if ($recherche->recherchePointChronopostInterParServiceAGL(new \StructType\Reche
 /**
  * Sample call for recherchePointChronopost operation/method
  */
-if ($recherche->recherchePointChronopost(new \StructType\RecherchePointChronopost()) !== false) {
+if ($recherche->recherchePointChronopost(new \ChronopostSearchBt\StructType\RecherchePointChronopost()) !== false) {
     print_r($recherche->getResult());
 } else {
     print_r($recherche->getLastError());
@@ -44,7 +44,7 @@ if ($recherche->recherchePointChronopost(new \StructType\RecherchePointChronopos
 /**
  * Sample call for recherchePointChronopostInterParService operation/method
  */
-if ($recherche->recherchePointChronopostInterParService(new \StructType\RecherchePointChronopostInterParService()) !== false) {
+if ($recherche->recherchePointChronopostInterParService(new \ChronopostSearchBt\StructType\RecherchePointChronopostInterParService()) !== false) {
     print_r($recherche->getResult());
 } else {
     print_r($recherche->getLastError());
@@ -52,7 +52,7 @@ if ($recherche->recherchePointChronopostInterParService(new \StructType\Recherch
 /**
  * Sample call for rechercheBtParCodeproduitEtCodepostalEtDate operation/method
  */
-if ($recherche->rechercheBtParCodeproduitEtCodepostalEtDate(new \StructType\RechercheBtParCodeproduitEtCodepostalEtDate()) !== false) {
+if ($recherche->rechercheBtParCodeproduitEtCodepostalEtDate(new \ChronopostSearchBt\StructType\RechercheBtParCodeproduitEtCodepostalEtDate()) !== false) {
     print_r($recherche->getResult());
 } else {
     print_r($recherche->getLastError());
@@ -60,7 +60,7 @@ if ($recherche->rechercheBtParCodeproduitEtCodepostalEtDate(new \StructType\Rech
 /**
  * Sample call for rechercheBtParIdChronopostA2Pas operation/method
  */
-if ($recherche->rechercheBtParIdChronopostA2Pas(new \StructType\RechercheBtParIdChronopostA2Pas()) !== false) {
+if ($recherche->rechercheBtParIdChronopostA2Pas(new \ChronopostSearchBt\StructType\RechercheBtParIdChronopostA2Pas()) !== false) {
     print_r($recherche->getResult());
 } else {
     print_r($recherche->getLastError());
@@ -68,7 +68,7 @@ if ($recherche->rechercheBtParIdChronopostA2Pas(new \StructType\RechercheBtParId
 /**
  * Sample call for rechercheTourneeParTypeTourneeEtPosteComptable operation/method
  */
-if ($recherche->rechercheTourneeParTypeTourneeEtPosteComptable(new \StructType\RechercheTourneeParTypeTourneeEtPosteComptable()) !== false) {
+if ($recherche->rechercheTourneeParTypeTourneeEtPosteComptable(new \ChronopostSearchBt\StructType\RechercheTourneeParTypeTourneeEtPosteComptable()) !== false) {
     print_r($recherche->getResult());
 } else {
     print_r($recherche->getLastError());
@@ -76,7 +76,7 @@ if ($recherche->rechercheTourneeParTypeTourneeEtPosteComptable(new \StructType\R
 /**
  * Sample call for recherchePointChronopostParId operation/method
  */
-if ($recherche->recherchePointChronopostParId(new \StructType\RecherchePointChronopostParId()) !== false) {
+if ($recherche->recherchePointChronopostParId(new \ChronopostSearchBt\StructType\RecherchePointChronopostParId()) !== false) {
     print_r($recherche->getResult());
 } else {
     print_r($recherche->getLastError());
@@ -84,7 +84,7 @@ if ($recherche->recherchePointChronopostParId(new \StructType\RecherchePointChro
 /**
  * Sample call for rechercheDetailPointChronopost operation/method
  */
-if ($recherche->rechercheDetailPointChronopost(new \StructType\RechercheDetailPointChronopost()) !== false) {
+if ($recherche->rechercheDetailPointChronopost(new \ChronopostSearchBt\StructType\RechercheDetailPointChronopost()) !== false) {
     print_r($recherche->getResult());
 } else {
     print_r($recherche->getLastError());
@@ -93,7 +93,7 @@ if ($recherche->rechercheDetailPointChronopost(new \StructType\RechercheDetailPo
  * Sample call for recherchePointChronopostParCoordonneesGeographiques
  * operation/method
  */
-if ($recherche->recherchePointChronopostParCoordonneesGeographiques(new \StructType\RecherchePointChronopostParCoordonneesGeographiques()) !== false) {
+if ($recherche->recherchePointChronopostParCoordonneesGeographiques(new \ChronopostSearchBt\StructType\RecherchePointChronopostParCoordonneesGeographiques()) !== false) {
     print_r($recherche->getResult());
 } else {
     print_r($recherche->getLastError());
@@ -101,7 +101,7 @@ if ($recherche->recherchePointChronopostParCoordonneesGeographiques(new \StructT
 /**
  * Sample call for recherchePointChronopostInter operation/method
  */
-if ($recherche->recherchePointChronopostInter(new \StructType\RecherchePointChronopostInter()) !== false) {
+if ($recherche->recherchePointChronopostInter(new \ChronopostSearchBt\StructType\RecherchePointChronopostInter()) !== false) {
     print_r($recherche->getResult());
 } else {
     print_r($recherche->getLastError());
@@ -109,7 +109,7 @@ if ($recherche->recherchePointChronopostInter(new \StructType\RecherchePointChro
 /**
  * Sample call for recherchePointRelaisParCoordonneesGeographiques operation/method
  */
-if ($recherche->recherchePointRelaisParCoordonneesGeographiques(new \StructType\RecherchePointRelaisParCoordonneesGeographiques()) !== false) {
+if ($recherche->recherchePointRelaisParCoordonneesGeographiques(new \ChronopostSearchBt\StructType\RecherchePointRelaisParCoordonneesGeographiques()) !== false) {
     print_r($recherche->getResult());
 } else {
     print_r($recherche->getLastError());
@@ -117,7 +117,7 @@ if ($recherche->recherchePointRelaisParCoordonneesGeographiques(new \StructType\
 /**
  * Sample call for recherchePointChronopostAvecCoordParId operation/method
  */
-if ($recherche->recherchePointChronopostAvecCoordParId(new \StructType\RecherchePointChronopostAvecCoordParId()) !== false) {
+if ($recherche->recherchePointChronopostAvecCoordParId(new \ChronopostSearchBt\StructType\RecherchePointChronopostAvecCoordParId()) !== false) {
     print_r($recherche->getResult());
 } else {
     print_r($recherche->getLastError());
@@ -126,7 +126,7 @@ if ($recherche->recherchePointChronopostAvecCoordParId(new \StructType\Recherche
  * Sample call for recherchePointRelaisParCoordonneesGeographiquesParService
  * operation/method
  */
-if ($recherche->recherchePointRelaisParCoordonneesGeographiquesParService(new \StructType\RecherchePointRelaisParCoordonneesGeographiquesParService()) !== false) {
+if ($recherche->recherchePointRelaisParCoordonneesGeographiquesParService(new \ChronopostSearchBt\StructType\RecherchePointRelaisParCoordonneesGeographiquesParService()) !== false) {
     print_r($recherche->getResult());
 } else {
     print_r($recherche->getLastError());
@@ -134,7 +134,7 @@ if ($recherche->recherchePointRelaisParCoordonneesGeographiquesParService(new \S
 /**
  * Sample call for rechercheBtAvecPFParIdChronopostA2Pas operation/method
  */
-if ($recherche->rechercheBtAvecPFParIdChronopostA2Pas(new \StructType\RechercheBtAvecPFParIdChronopostA2Pas()) !== false) {
+if ($recherche->rechercheBtAvecPFParIdChronopostA2Pas(new \ChronopostSearchBt\StructType\RechercheBtAvecPFParIdChronopostA2Pas()) !== false) {
     print_r($recherche->getResult());
 } else {
     print_r($recherche->getLastError());
@@ -142,7 +142,7 @@ if ($recherche->rechercheBtAvecPFParIdChronopostA2Pas(new \StructType\RechercheB
 /**
  * Sample call for rechercheDetailPointChronopostInter operation/method
  */
-if ($recherche->rechercheDetailPointChronopostInter(new \StructType\RechercheDetailPointChronopostInter()) !== false) {
+if ($recherche->rechercheDetailPointChronopostInter(new \ChronopostSearchBt\StructType\RechercheDetailPointChronopostInter()) !== false) {
     print_r($recherche->getResult());
 } else {
     print_r($recherche->getLastError());
@@ -151,7 +151,7 @@ if ($recherche->rechercheDetailPointChronopostInter(new \StructType\RechercheDet
  * Sample call for recherchePointChronopostParCoordonneesGeographiquesParService
  * operation/method
  */
-if ($recherche->recherchePointChronopostParCoordonneesGeographiquesParService(new \StructType\RecherchePointChronopostParCoordonneesGeographiquesParService()) !== false) {
+if ($recherche->recherchePointChronopostParCoordonneesGeographiquesParService(new \ChronopostSearchBt\StructType\RecherchePointChronopostParCoordonneesGeographiquesParService()) !== false) {
     print_r($recherche->getResult());
 } else {
     print_r($recherche->getLastError());
@@ -160,7 +160,7 @@ if ($recherche->recherchePointChronopostParCoordonneesGeographiquesParService(ne
  * Sample call for rechercheBtAvecPFParCodeproduitEtCodepostalEtDate
  * operation/method
  */
-if ($recherche->rechercheBtAvecPFParCodeproduitEtCodepostalEtDate(new \StructType\RechercheBtAvecPFParCodeproduitEtCodepostalEtDate()) !== false) {
+if ($recherche->rechercheBtAvecPFParCodeproduitEtCodepostalEtDate(new \ChronopostSearchBt\StructType\RechercheBtAvecPFParCodeproduitEtCodepostalEtDate()) !== false) {
     print_r($recherche->getResult());
 } else {
     print_r($recherche->getLastError());
@@ -168,7 +168,7 @@ if ($recherche->rechercheBtAvecPFParCodeproduitEtCodepostalEtDate(new \StructTyp
 /**
  * Sample call for rechercheTournee operation/method
  */
-if ($recherche->rechercheTournee(new \StructType\RechercheTournee()) !== false) {
+if ($recherche->rechercheTournee(new \ChronopostSearchBt\StructType\RechercheTournee()) !== false) {
     print_r($recherche->getResult());
 } else {
     print_r($recherche->getLastError());
@@ -176,11 +176,11 @@ if ($recherche->rechercheTournee(new \StructType\RechercheTournee()) !== false) 
 /**
  * Samples for Get ServiceType
  */
-$get = new \ServiceType\Get($options);
+$get = new \ChronopostSearchBt\ServiceType\Get($options);
 /**
  * Sample call for getAllChronopostAgences operation/method
  */
-if ($get->getAllChronopostAgences(new \StructType\GetAllChronopostAgences()) !== false) {
+if ($get->getAllChronopostAgences(new \ChronopostSearchBt\StructType\GetAllChronopostAgences()) !== false) {
     print_r($get->getResult());
 } else {
     print_r($get->getLastError());
